@@ -30,6 +30,8 @@ module HTTPI
       # Accessor for the cacert file to validate SSL certificates.
       attr_accessor :ca_cert_file
 
+      attr_accessor :version
+
       # Returns the cert type to validate SSL certificates PEM|DER.
       def cert_type
         @cert_type ||= :pem
